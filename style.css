@@ -1,0 +1,225 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fff3e6;
+  overflow-x: hidden;
+}
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 530px;
+  width: 70vw;
+  margin: 0 auto;
+  background-color: #583d72;
+  margin-top: 2rem;
+  border-radius: 5px;
+}
+#btn {
+  padding: 5px 15px;
+  border: none;
+  background-color: #9f5f80d2;
+  font-size: 16px;
+  border-radius: 5px;
+  color: #fff3e6;
+  transition: all 0.3s ease;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-left-color: transparent;
+  box-shadow: 0px 0px 6px #fff3e6;
+}
+#btn:hover {
+  background-color: #965476;
+}
+#btn:focus {
+  outline: none;
+}
+
+.wrapper h1 {
+  color: #fff3e6;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.todo-input {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.todoinputter {
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid rgba(128, 128, 128, 0.103);
+  box-shadow: 0px 0px 6px #fff3e6;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  font-size: 1rem;
+  background-color: #fff3e6;
+  color: #252525;
+  border: none;
+  width: 50vw;
+  min-width: 200px;
+}
+.todoinputter:focus {
+  outline: none;
+}
+.todos {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.todos li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+}
+.control-todo-item {
+  display: flex;
+  justify-content: space-between;
+}
+.editBtn {
+  cursor: pointer;
+  color: #55b3b1;
+  background-color: #55b3b15b;
+  padding: 5px;
+  width: 30px;
+  border: none;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+.editBtn:hover {
+  background-color: #55b3b1;
+  color: white;
+}
+.okBtn {
+  display: none;
+  cursor: pointer;
+  color: #fff3e6;
+  background-color: #55b3b1;
+  padding: 5px;
+  width: 30px;
+  border: none;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+.okBtn.show {
+  display: block;
+}
+.deleteBtn {
+  cursor: pointer;
+  color: #cd5d7d;
+  background-color: #cd5d7d5b;
+  padding: 5px;
+  text-align: center;
+  width: 30px;
+  transition: all 0.3s ease;
+}
+.deleteBtn:hover {
+  background-color: #cd5d7d;
+  color: white;
+}
+.todo-text {
+  border: none;
+  height: 100%;
+  padding: 5px;
+  width: 100%;
+  font-size: 1rem;
+  background-color: #fff3e6;
+  color: #252525;
+}
+.todo-text:focus {
+  outline: none;
+}
+.todo-output {
+  margin: 1rem;
+}
+.clear-all {
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #9f5f80d2;
+  color: white;
+  border: none;
+  box-shadow: 0px 0px 5px rgba(128, 128, 128, 0.521);
+  font-weight: 500;
+  letter-spacing: 1rem;
+  transition: all 0.3s ease;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.clear-all:hover {
+  background-color: #9f5f80;
+}
+.clear-all:focus {
+  outline: none;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color:#20201fc2;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  margin: 0 auto;
+}
+.be-sure {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  background-color: #965476;
+  border-radius: 5px;
+  padding: 2rem;
+  box-sizing: border-box;
+  color: white;
+  text-align: center;
+}
+.be-sure h4 {
+  margin: 0;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color:#fff3e6;
+}
+button:focus {
+  outline: none;
+}
+#clearYes {
+  width: 50%;
+  font-size: 1rem;
+  padding: 10px;
+  border: none;
+  color: #cd5d7d;
+  background-color: #fff3e6;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+#cancelNo {
+  width: 50%;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  color: #fff3e6;
+  background-color: #252525;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+.btns-clear {
+  display: flex;
+  flex-direction: row;
+}
+#cancelNo:hover,
+#clearYes:hover {
+  color: #fff3e6;
+  background-color: #583d72;
+}
